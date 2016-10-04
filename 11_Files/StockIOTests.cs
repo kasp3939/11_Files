@@ -27,9 +27,9 @@ namespace _11_Files
 
         [TestMethod]
         public void CanWriteStockYahoo()
-        {
+        { 
             StockIO io = new StockIO();
-            StringWriter sw = new StringWriter();
+            StringWriter sw = new StringWriter(); 
             io.WriteStock(sw, yhoo);
             Assert.AreEqual("YHOO" + NL + "57,2" + NL + "30" + NL, sw.ToString());
         }

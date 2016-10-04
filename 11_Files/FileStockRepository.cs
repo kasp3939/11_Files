@@ -1,41 +1,48 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 
 namespace _11_Files
 {
     internal class FileStockRepository : IStockRepository
     {
-        private DirectoryInfo repositoryDir;
+        Dictionary<long, Stock> repositoryDir = new Dictionary<long, Stock>();
 
         public FileStockRepository(DirectoryInfo repositoryDir)
         {
-            this.repositoryDir = repositoryDir;
+            
         }
+
+        public int nextId { get; private set; } 
+        public Stock stock { get; private set; }
 
         public void Clear()
         {
-            throw new NotImplementedException();
+            repositoryDir.Clear();
         }
 
         public ICollection FindAllStocks()
         {
-            throw new NotImplementedException();
+            return repositoryDir;
         }
 
         public Stock LoadStock(long id)
         {
-            throw new NotImplementedException();
+            if (repositoryDir.ContainsKey(id)) return repositoryDir[id];
+            else return null;
         }
 
         public long NextId()
         {
-            throw new NotImplementedException();
+            nextId++;
+            return nextId;
         }
 
         public void SaveStock(Stock yhoo)
         {
-            throw new NotImplementedException();
+            repositoryDir.Add(nextId, stock);
+            NextId();
         }
     }
 }
