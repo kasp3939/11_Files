@@ -24,7 +24,7 @@ namespace _11_Files
 
         internal Stock ReadStock(StringReader data)
         {
-           throw new NotImplementedException();
+            throw new NotImplementedException();
         }
 
         internal void WriteStock(FileInfo output, Stock hp)

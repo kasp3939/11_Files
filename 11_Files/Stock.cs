@@ -81,10 +81,7 @@ namespace _11_Files
                 (NumShares == s.NumShares);
         }
 
-        //internal static object TotalValue(IAsset[] portfolio)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        
 
         public string GetName()
         {
