@@ -11,7 +11,6 @@ namespace _11_Files
 
         public FileStockRepository(DirectoryInfo repositoryDir)
         {
-            
         }
 
         public int nextId { get; private set; } 

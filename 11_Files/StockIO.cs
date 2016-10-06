@@ -26,7 +26,10 @@ namespace _11_Files
 
         internal Stock ReadStock(StringReader data)
         {
-            throw new NotImplementedException();
+            
+            Convert.ToInt32(data);
+            //StringReader readline = StringReader.Parse(data);
+            //return readline;
         }
 
         internal void WriteStock(FileInfo output, Stock Stock)
