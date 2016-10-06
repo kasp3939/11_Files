@@ -43,20 +43,20 @@ namespace _11_Files
         //[TestMethod]
         //public void FindStockFileName()
         //{
-        //    IFileRepository repository = new FileStockRepository(repositoryDir);
-        //    Assert.AreEqual("stock123.txt", repository.StockFileName(123));
-        //    hp.Id = 456;
-        //    Assert.AreEqual("stock456.txt", repository.StockFileName(hp));
+            //IFileRepository repository = new FileStockRepository(repositoryDir);
+            //Assert.AreEqual("stock123.txt", repository.StockFileName(123));
+            //hp.Id = 456;
+            //Assert.AreEqual("stock456.txt", repository.StockFileName(hp));
         //}
 
         //[TestMethod]
         //public void CanSaveStockWritesToFile()
         //{
-        //    IFileRepository repository = new FileStockRepository(repositoryDir);
-        //    repository.SaveStock(yhoo);
-        //    Assert.IsFalse(yhoo.Id == 0);
-        //    FileInfo fileYhoo = new FileInfo(repositoryDir + repository.StockFileName(yhoo));
-        //    Assert.IsTrue(fileYhoo.Exists);
+            //IFileRepository repository = new FileStockRepository(repositoryDir);
+            //repository.SaveStock(yhoo);
+            //Assert.IsFalse(yhoo.Id == 0);
+            //FileInfo fileYhoo = new FileInfo(repositoryDir + repository.StockFileName(yhoo));
+            //Assert.IsTrue(fileYhoo.Exists);
         //}
 
         [TestMethod]

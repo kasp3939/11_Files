@@ -7,7 +7,7 @@ namespace _11_Files
 {
     internal class StockIO : IStockRepository
 
-        {
+    {
 
         Dictionary<long, Stock> database = new Dictionary<long, Stock>();
         public int nextId { get; private set; }
@@ -17,9 +17,11 @@ namespace _11_Files
         {
         }
 
-        internal void WriteStock(StringWriter sw, Stock hp)
+        internal void WriteStock(StringWriter sw, Stock Stock)
         {
-            throw new NotImplementedException();
+            sw.WriteLine(Stock.Symbol);
+            sw.WriteLine(Stock.PricePerShare);
+            sw.WriteLine(Stock.NumShares);
         }
 
         internal Stock ReadStock(StringReader data)
@@ -27,7 +29,7 @@ namespace _11_Files
             throw new NotImplementedException();
         }
 
-        internal void WriteStock(FileInfo output, Stock hp)
+        internal void WriteStock(FileInfo output, Stock Stock)
         {
             throw new NotImplementedException();
         }
